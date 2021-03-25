@@ -1,0 +1,491 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.bottom-line {
+  width: 100px;
+  height: 5px;
+  margin: 0 0 1rem;
+  background: #55d66f;
+  border-radius: 20px;
+}
+
+.header {
+  height: 40vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/Header-bg.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/Header-bg.jpg") center/cover no-repeat;
+  color: #fff;
+}
+
+.header .container {
+  padding: 2rem;
+  height: 100%;
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.header-img-c {
+  -webkit-animation: scale 3s linear 1;
+          animation: scale 3s linear 1;
+}
+
+.header-img {
+  display: block;
+  width: 120px;
+}
+
+.header-title {
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  -webkit-animation: slideToRight 3s ease-in-out 1;
+          animation: slideToRight 3s ease-in-out 1;
+}
+
+.header-sub {
+  font-family: "Grand Hotel", cursive;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  -webkit-animation: slideToleft 3s ease-in-out 1;
+          animation: slideToleft 3s ease-in-out 1;
+}
+
+@-webkit-keyframes slideToRight {
+  0% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+    opacity: 0.2;
+  }
+  50% {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideToRight {
+  0% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+    opacity: 0.2;
+  }
+  50% {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideToleft {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+    opacity: 0.2;
+  }
+  50% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideToleft {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+    opacity: 0.2;
+  }
+  50% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0.3;
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0.3;
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.section-container {
+  padding: 2rem;
+}
+
+.section .text-lead {
+  font-family: "Grand Hotel", cursive;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0 auto 1rem;
+  max-width: 600px;
+  text-align: center;
+}
+
+.section-info {
+  margin: 1rem auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: '. . . . c' '. a a . c' '. b b . c' '. . . . c';
+  gap: 1rem;
+}
+
+.section-des1, .section-des2 {
+  padding: 1rem;
+  border-radius: 20px;
+  max-width: 700px;
+  background: #73f8a4;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  -webkit-box-shadow: 5px 5px 15px #bdbdbd;
+          box-shadow: 5px 5px 15px #bdbdbd;
+}
+
+.section-des1:hover, .section-des2:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 1px 1px 10px #bdbdbd;
+          box-shadow: 1px 1px 10px #bdbdbd;
+}
+
+.section-des1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: a;
+}
+
+.section-des2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: b;
+}
+
+.section .sidebar {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 6;
+  grid-area: c;
+  padding: 2rem;
+  background: #4aab76;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.section .list-item {
+  padding: 1rem 0;
+}
+
+.section .design-name {
+  font-family: "Grand Hotel", cursive;
+  display: block;
+  letter-spacing: 0.2rem;
+}
+
+.section .designer-name,
+.section .design-name {
+  color: #fff;
+  font-size: 1.2rem;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.section .designer-name:hover,
+.section .design-name:hover {
+  color: #333;
+}
+
+.sectionA-content {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionA-desc1 {
+  margin: 1rem;
+}
+
+.sectionA-title {
+  font-size: 1.3rem;
+}
+
+.sectionA-text {
+  padding-bottom: 1rem;
+  max-width: 800px;
+}
+
+.sectionA-link {
+  color: skyblue;
+}
+
+.sectionA-img-container {
+  position: relative;
+}
+
+.sectionA-img-container:after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  border: 5px solid #55d66f;
+  top: -20px;
+  left: -25px;
+  z-index: -1;
+}
+
+.sectionA-img-container:before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: #55d66f;
+  opacity: 0.2;
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-box-shadow: 2px 2px 15px #55d66f;
+          box-shadow: 2px 2px 15px #55d66f;
+}
+
+.sectionA-img {
+  width: 600px;
+  height: 500px;
+}
+
+.sectionA-content2 {
+  padding: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/pic-2.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/pic-2.jpg") center/cover no-repeat;
+  color: #fff;
+  position: relative;
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'a a a a a c' 'b b b b b c' 'b b b b b c';
+  overflow-x: hidden;
+}
+
+.sectionA-des2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: a;
+}
+
+.sectionA-des3 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: b;
+}
+
+.sectionA-sidebar {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 6;
+  grid-area: c;
+  border-radius: 30px;
+  -webkit-transform: translateX(600px);
+          transform: translateX(600px);
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../img/pic-3.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/pic-3.jpg") center/cover no-repeat;
+  overflow-x: hidden;
+}
+
+.sectionA-sidebar-link {
+  color: #54eeb8;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.sectionA-sidebar-link:hover {
+  margin-left: 0.5rem;
+}
+
+.sectionA-list-item {
+  padding: 2rem 1rem;
+  border-bottom: 2px solid white;
+}
+
+.toggle-menu {
+  padding: 1rem;
+  display: none;
+}
+
+.toggle-menu:checked ~ .sectionA-sidebar {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.toggle-label {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 200px;
+  cursor: pointer;
+}
+
+.toggle-label div {
+  width: 50px;
+  height: 5px;
+  background: green;
+  border-radius: 100px;
+}
+
+.toggle-label div:before, .toggle-label div:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background: green;
+  top: 10px;
+  border-radius: 100px;
+}
+
+.toggle-label div:after {
+  content: '';
+  top: 10px;
+}
+
+.toggle-label div:before {
+  content: '';
+  top: -10px;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+}
+
+.footer-info {
+  margin-bottom: 2rem;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  font-family: "Grand Hotel", cursive;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.footer-link {
+  color: #9797e9;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.footer-link:hover {
+  color: #cbcbf5;
+}
+
+.footer-icons {
+  text-align: center;
+}
+
+.footer i {
+  font-size: 3rem;
+  color: #9797e9;
+  padding: 2rem;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.footer i:hover {
+  color: #cbcbf5;
+}
+/*# sourceMappingURL=main.css.map */
